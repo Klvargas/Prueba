@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a20fb7903c6146819b22a17b27686bc6" Name="Diagram1">
+        <EntityTypeShape EntityType="prueba1Model.fuentes" Width="1.5" PointX="1.875" PointY="1.125" />
+        <EntityTypeShape EntityType="prueba1Model.municipio" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="prueba1Model.poblacion" Width="1.5" PointX="3" PointY="7.125" />
+        <EntityTypeShape EntityType="prueba1Model.proyecto" Width="1.5" PointX="3" PointY="3.5" />
+        <EntityTypeShape EntityType="prueba1Model.proyecto_vs_fuente" Width="1.5" PointX="5.25" PointY="3.75" />
+        <EntityTypeShape EntityType="prueba1Model.proyecto_vs_poblacion" Width="1.5" PointX="6.75" PointY="1.125" />
+        <AssociationConnector Association="prueba1Model.FK_proyecto_vs_fuente_fuentes" />
+        <AssociationConnector Association="prueba1Model.FK_proyecto_municipio" />
+        <AssociationConnector Association="prueba1Model.FK_proyecto_vs_poblacion_poblacion" />
+        <AssociationConnector Association="prueba1Model.FK_proyecto_vs_fuente_proyecto" />
+        <AssociationConnector Association="prueba1Model.FK_proyecto_vs_poblacion_proyecto" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

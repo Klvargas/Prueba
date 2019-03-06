@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Prueba1.Proyecto.Site1" %>
+
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>     
+            <telerik:RadMenu ID="RadMenu1" Runat="server">
+                    <Items>
+                        <telerik:RadMenuItem runat="server" Text="Proyectos">
+                            <Items>
+                                <telerik:RadMenuItem runat="server" Text="Nuevo">
+                                </telerik:RadMenuItem>
+                                <telerik:RadMenuItem runat="server" Text="Modificar">
+                                </telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" Text="Fuentes de Financiación">
+                            <Items>
+                                <telerik:RadMenuItem runat="server" Text="Administrar">
+                                </telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem runat="server" Text="Grupos Poblacionales">
+                            <Items>
+                                <telerik:RadMenuItem runat="server" Text="Administrar">
+                                </telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenuItem>
+                    </Items>
+                </telerik:RadMenu>
+            <telerik:RadScriptManager ID="RadScriptManager1" Runat="server">
+            </telerik:RadScriptManager>
+            <br />
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+  
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
