@@ -12,7 +12,7 @@ namespace Prueba1.Proyecto
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
           protected void btnguardar_Click(object sender, EventArgs e)
