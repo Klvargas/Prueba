@@ -47,6 +47,7 @@ namespace Prueba1.Proyecto
 
         protected void btn_actualizar_Click(object sender, EventArgs e)
         {
+            dsfadsfadsfdsfsdf
             prueba1Entities cnx1 = new prueba1Entities();
             proyecto existe = new proyecto();
             int id_proyecto = Convert.ToInt32(Session["ID_PROYECTO"]);
