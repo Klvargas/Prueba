@@ -27,7 +27,7 @@ namespace Prueba1.Proyecto
                 py.valor_proy = Convert.ToDouble(txtvalor.Value);
                 py.objetivos = txtobjetivos.Text;
                 py.id_municipio = Convert.ToInt32(cmb_municipios.SelectedValue);
-
+                
                 cnx1.proyecto.Add(py);
                 cnx1.SaveChanges();
                 string cadena_url = Request.QueryString.ToString();
@@ -53,6 +53,27 @@ namespace Prueba1.Proyecto
                     txtcodigo.Text = "";
                 }
             }
+        }
+
+        protected void EDS_municipio_Selecting(object sender, EntityDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void RadGrid1_NeedDataSource(object sender, GridNeedDataSourceEventArgs e)
+        {
+            
+        }
+
+        protected void EDS_proyecto_vs_poblacion_Selecting(object sender, EntityDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void EDS_poblacion_Selecting(object sender, EntityDataSourceSelectingEventArgs e)
+        {
+
+
         }
     }
 }

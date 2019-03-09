@@ -7,11 +7,20 @@
         }
         .auto-style2 {
             height: 23px;
+            width: 545px;
         }
         .auto-style3 {
             height: 43px;
+            width: 545px;
         }
-    </style>
+        .auto-style4 {
+            width: 545px;
+        }
+        .auto-style5 {
+            left: 17px;
+            top: 26px;
+        }
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     sgdg<table class="auto-style1" style="margin: auto">
@@ -26,7 +35,7 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style4">
                 <telerik:RadLabel ID="RadLabel2" runat="server" style="font-size: small; font-family: Arial, Helvetica, sans-serif">
                     Nombre</telerik:RadLabel>
                 <br />
@@ -35,7 +44,7 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style4">
                 <telerik:RadLabel ID="RadLabel3" runat="server" style="font-size: small; font-family: Arial, Helvetica, sans-serif">
                     Valor</telerik:RadLabel>
                 <br />
@@ -44,7 +53,7 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style4">
                 <telerik:RadLabel ID="RadLabel4" runat="server" style="font-size: small; font-family: Arial, Helvetica, sans-serif">
                     Objetivos</telerik:RadLabel>
                 <br />
@@ -54,29 +63,31 @@
         </tr>
         <tr>
             <td class="auto-style2">
-                <telerik:RadComboBox ID="cmb_municipios" Runat="server" Culture="es-ES" DataSourceID="EDS_municipio" DataTextField="nombre_mun" DataValueField="id" EmptyMessage=" " MarkFirstMatch="True" Text="Seleccione Municipio">
+                <telerik:RadLabel ID="RadLabel5" runat="server">
+                    Municipio
+                </telerik:RadLabel>
+                <br />
+                <telerik:RadComboBox ID="cmb_municipios" Runat="server" Culture="es-ES" DataSourceID="EDS_municipio" DataTextField="nombre_mun" DataValueField="id" EmptyMessage=" " MarkFirstMatch="True" Text="Seleccione Municipio" Height="23px">
                 </telerik:RadComboBox>
-                <asp:EntityDataSource ID="EDS_municipio" runat="server" ConnectionString="name=prueba1Entities" DefaultContainerName="prueba1Entities" EnableDelete="True" EnableFlattening="False" EnableInsert="True" EnableUpdate="True" EntitySetName="municipio">
+                <asp:EntityDataSource ID="EDS_municipio" runat="server" ConnectionString="name=prueba1Entities" DefaultContainerName="prueba1Entities" EnableDelete="True" EnableFlattening="False" EnableInsert="True" EnableUpdate="True" EntitySetName="municipio" OnSelecting="EDS_municipio_Selecting">
                 </asp:EntityDataSource>
             </td>
         </tr>
         <tr>
-            <td>
-                <telerik:RadButton ID="btnguardar" runat="server" OnClick="btnguardar_Click" Text="Guardar">
+            <td class="auto-style4">
+                <telerik:RadButton ID="btnguardar" runat="server" OnClick="btnguardar_Click" Text="Guardar" CssClass="auto-style5">
                 </telerik:RadButton>
             </td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td class="auto-style4">
+                &nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td class="auto-style4">&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
+            <td class="auto-style4">&nbsp;</td>
         </tr>
     </table>
 </asp:Content>

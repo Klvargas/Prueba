@@ -47,6 +47,7 @@ namespace Prueba1.Proyecto
 
         protected void btn_actualizar_Click(object sender, EventArgs e)
         {
+            
             prueba1Entities cnx1 = new prueba1Entities();
             proyecto existe = new proyecto();
             int id_proyecto = Convert.ToInt32(Session["ID_PROYECTO"]);
@@ -70,6 +71,26 @@ namespace Prueba1.Proyecto
                 script += message; script += "');"; script += "window.location = '"; script += url; script += "'; }";
                 RadScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "alert", script, true);
             }
+        }
+
+        protected void EDS_poblacion_Selecting(object sender, EntityDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void RadGrid1_NeedDataSource(object sender, GridNeedDataSourceEventArgs e)
+        {
+
+        }
+
+        protected void EDS_proyecto_vs_poblacion_Selecting(object sender, EntityDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void txt_nombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -5,10 +5,7 @@
         .auto-style1 {
             width: 70%;
         }
-        .auto-style2 {
-            height: 23px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style1" style="margin: auto">
@@ -27,13 +24,13 @@
                 <telerik:RadLabel ID="RadLabel2" runat="server">
                     Nombre
                 </telerik:RadLabel>
-                <asp:TextBox ID="txt_nombre" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txt_nombre" runat="server" OnTextChanged="txt_nombre_TextChanged"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_nombre" ErrorMessage="Dato requerido"></asp:RequiredFieldValidator>
                 <br />
             </td>
         </tr>
         <tr>
-            <td class="auto-style2" style="margin: auto">
+            <td style="margin: auto">
                 <telerik:RadLabel ID="RadLabel3" runat="server">
                     Valor
                 </telerik:RadLabel>
@@ -70,7 +67,7 @@
                     Población
                 </telerik:RadLabel>
                 <br />
-                <telerik:RadGrid ID="RadGrid1" runat="server" AllowAutomaticDeletes="True" AllowAutomaticInserts="True" AllowAutomaticUpdates="True" AutoGenerateColumns="False" Culture="es-ES" DataSourceID="EDS_proyecto_vs_poblacion" Width="50%">
+                <telerik:RadGrid ID="RadGrid1" runat="server" AllowAutomaticDeletes="True" AllowAutomaticInserts="True" AllowAutomaticUpdates="True" AutoGenerateColumns="False" Culture="es-ES" DataSourceID="EDS_proyecto_vs_poblacion" Width="50%" OnNeedDataSource="RadGrid1_NeedDataSource">
 <GroupingSettings CollapseAllTooltip="Collapse all groups"></GroupingSettings>
                     <MasterTableView CommandItemDisplay="Top" DataKeyNames="id" DataSourceID="EDS_proyecto_vs_poblacion" EditMode="Batch" NoMasterRecordsText="">
                         <CommandItemSettings AddNewRecordText="Agregar Nuevo" CancelChangesText="Cancelar" RefreshText="Actualizar" SaveChangesText="Guardar" />
@@ -90,7 +87,7 @@
                         </Columns>
                     </MasterTableView>
                 </telerik:RadGrid>
-                <asp:EntityDataSource ID="EDS_proyecto_vs_poblacion" runat="server" ConnectionString="name=prueba1Entities" DefaultContainerName="prueba1Entities" EnableDelete="True" EnableFlattening="False" EnableInsert="True" EnableUpdate="True" EntitySetName="proyecto_vs_poblacion" EntityTypeFilter="" Select="" Where="it.[id_proy] = @id_proy">
+                <asp:EntityDataSource ID="EDS_proyecto_vs_poblacion" runat="server" ConnectionString="name=prueba1Entities" DefaultContainerName="prueba1Entities" EnableDelete="True" EnableFlattening="False" EnableInsert="True" EnableUpdate="True" EntitySetName="proyecto_vs_poblacion" EntityTypeFilter="" Select="" Where="it.[id_proy] = @id_proy" OnSelecting="EDS_proyecto_vs_poblacion_Selecting">
                     <WhereParameters>
                         <asp:SessionParameter Name="id_proy" SessionField="ID_PROYECTO" Type="Int32" />
                     </WhereParameters>
@@ -98,7 +95,7 @@
                         <asp:SessionParameter Name="id_proy" SessionField="ID_PROYECTO" Type="Int32" />
                     </InsertParameters>
                 </asp:EntityDataSource>
-                <asp:EntityDataSource ID="EDS_poblacion" runat="server" ConnectionString="name=prueba1Entities" DefaultContainerName="prueba1Entities" EnableDelete="True" EnableFlattening="False" EnableInsert="True" EnableUpdate="True" EntitySetName="poblacion">
+                <asp:EntityDataSource ID="EDS_poblacion" runat="server" ConnectionString="name=prueba1Entities" DefaultContainerName="prueba1Entities" EnableDelete="True" EnableFlattening="False" EnableInsert="True" EnableUpdate="True" EntitySetName="poblacion" OnSelecting="EDS_poblacion_Selecting">
                 </asp:EntityDataSource>
             </td>
         </tr>
