@@ -72,5 +72,25 @@ namespace Prueba1.Proyecto
                 RadScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "alert", script, true);
             }
         }
+
+        protected void EDS_poblacion_Selecting(object sender, EntityDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void RadGrid1_NeedDataSource(object sender, GridNeedDataSourceEventArgs e)
+        {
+
+        }
+
+        protected void EDS_proyecto_vs_poblacion_Selecting(object sender, EntityDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void txt_nombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -94,6 +94,15 @@ namespace Prueba1.Proyecto {
         protected global::Telerik.Web.UI.RadTextBox txtobjetivos;
         
         /// <summary>
+        /// Control RadLabel5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadLabel RadLabel5;
+        
+        /// <summary>
         /// Control cmb_municipios.
         /// </summary>
         /// <remarks>
