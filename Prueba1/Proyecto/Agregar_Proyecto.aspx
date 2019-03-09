@@ -17,14 +17,10 @@
             width: 545px;
         }
         .auto-style5 {
-            left: 11px;
-            top: -79px;
+            left: 17px;
+            top: 26px;
         }
-        .auto-style6 {
-            width: 545px;
-            height: 11px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     sgdg<table class="auto-style1" style="margin: auto">
@@ -78,13 +74,14 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style4">&nbsp;</td>
-        </tr>
-        <tr>
             <td class="auto-style4">
                 <telerik:RadButton ID="btnguardar" runat="server" OnClick="btnguardar_Click" Text="Guardar" CssClass="auto-style5">
                 </telerik:RadButton>
             </td>
+        </tr>
+        <tr>
+            <td class="auto-style4">
+                &nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style4">&nbsp;</td>
