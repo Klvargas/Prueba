@@ -75,5 +75,10 @@ namespace Prueba1.Proyecto
 
 
         }
+
+        protected void txtobjetivos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -57,7 +57,7 @@
                 <telerik:RadLabel ID="RadLabel4" runat="server" style="font-size: small; font-family: Arial, Helvetica, sans-serif">
                     Objetivos</telerik:RadLabel>
                 <br />
-                <telerik:RadTextBox ID="txtobjetivos" Runat="server" Rows="5" TextMode="MultiLine" Width="100%">
+                <telerik:RadTextBox ID="txtobjetivos" Runat="server" Rows="5" TextMode="MultiLine" Width="100%" OnTextChanged="txtobjetivos_TextChanged">
                 </telerik:RadTextBox>
             </td>
         </tr>
