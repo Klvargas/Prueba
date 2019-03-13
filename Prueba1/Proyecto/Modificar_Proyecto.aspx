@@ -10,7 +10,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style1" style="margin: auto">
         <tr>
-            <td style="margin: auto">asdf
+            <td style="margin: auto">Caja de texto
                 <telerik:RadLabel ID="RadLabel1" runat="server">
                     Código
                 </telerik:RadLabel>
